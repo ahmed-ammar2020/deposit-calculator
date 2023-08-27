@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 2000px;
+  padding: 20px;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+select,
+input {
+  width: 200px;
+  padding: 3px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.wasChart {
+  background-color: red;
+  width: 50px;
+}
+
+.becomeChart {
+  background-color: green;
+  width: 50px;
+}

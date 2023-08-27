@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Deposit calculator</title>
+  </head>
+  <body>
+    <form action="" name="my">
+      <p><b>Deposit calculator.</b></p>
+      <div class="mt">
+        <label for="initial"> Initial deposit</label>
+        <input type="number" name="initialValue" id="initial" min="0" />
+      </div>
+      <div class="mt">
+        <label for="initial"> How many months?</label>
+        <select name="time">
+          <option value=".25" selected>3 (minimum)</option>
+          <option value=".5">6 (half year)</option>
+          <option value="1" selected>12 (one year)</option>
+          <option value="1.5">18 (1.5 year)</option>
+          <option value="2">24 (2 years)</option>
+          <option value="2.5">30 (2.5 years)</option>
+          <option value="3">36 (3 years)</option>
+          <option value="5">60 (5 years)</option>
+        </select>
+      </div>
+      <div class="mt">
+        <label for="interest"> Interest per year?</label>
+        <input type="number" name="interestValue" id="interest" min="0" />
+      </div>
+    </form>
+    <div class="results mt">
+      <div class="was mt">
+        <h3>was</h3>
+        <div class="wasValue mt"></div>
+        <div class="wasChart mt"></div>
+      </div>
+      <div class="become mt">
+        <h3>Become</h3>
+        <div class="becomeValue mt"></div>
+        <div class="becomeChart mt"></div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
